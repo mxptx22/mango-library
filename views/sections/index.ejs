@@ -1,0 +1,10 @@
+<h2>Your Sections</h2>
+<form action="/sections" method="GET">
+  <label>Section Lookup</label>
+  <input type="text" name="name" value="<%= searching.name %>">
+  <button type="submit">Search</button>
+</form>
+<br>
+<% allSections.forEach(section => { %>
+  <div><%= section.name %> located on Floor <%= section.floor %> in Unit/Building <%= section.buildingUnit %> </div>
+<% }) %>
