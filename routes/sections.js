@@ -41,18 +41,6 @@ router.post('/', async (req, res) => {
       }) 
   }
 
-  // section.save((err,newSection) => {
-  //   if (err) {
-  //     res.render('sections/new', {
-  //       section:section,
-  //       errorMessage:'Error // Make sure all fields are filled'
-  //     }) 
-  //   } else {
-  //     // res.redirect(`sections/${newSection.id}`)
-  //     res.redirect(`sections`)
-  //   }
-  // })
-
 })
 
 module.exports = router
